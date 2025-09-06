@@ -1,0 +1,1500 @@
+* {
+  box-sizing: border-box;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Cabeçalho */
+.header {
+  background: #0b1d36;
+  width: 100%;
+  padding: 15px 50px;
+  top: 6px;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-logo img {
+  margin: 10px 75px 10px 0;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.header-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.header-menu a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px; /* 150% */
+}
+
+.btn-acessar {
+  display: inline-flex;
+  align-items: center;
+  color: #f5f5f5;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  border-radius: 50px;
+  background: #2f8c5c;
+  padding: 12px 18px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: background 0.1s ease;
+  margin-left: 75px;
+}
+
+.btn-acessar::after {
+  content: '🡥';
+  font-size: 14px;
+  margin-left: 10px;
+  background: #f5f5f5;
+  color: #248352;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.btn-acessar:hover {
+  background: #248352;
+}
+
+.btn-acessar:hover::after {
+  transform: translateX(3px);
+}
+
+/* Organize sua contabilidade médica em apenas */
+.hero-section-medic {
+  background-color: #2f8c5c;
+  color: #f5f5f5;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 0px 40px;
+  position: relative;
+}
+
+.hero-section22 {
+  display: flex;
+}
+
+.hero-content-medic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  max-width: 550px;
+}
+
+.hero-highlight {
+  padding: 5px;
+  border-radius: 25px;
+  width: 370px;
+  text-align: center;
+  background-color: rgba(2, 12, 151, 0.219);
+  color: #1f2559;
+  font-weight: 600;
+}
+
+.hero-content-medic h1 {
+  line-height: 1;
+  font-size: 56px;
+  margin: 20px 0;
+}
+
+.green {
+  color: #00e676;
+}
+
+.subtext {
+  font-size: 1rem;
+  margin-bottom: 32px;
+}
+
+.cta-button {
+  width: 287px;
+  display: inline-flex;
+  align-items: center;
+  background: #1f2559;
+  color: #f5f5f5; /* azul do texto */
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.cta-button .cta-icon {
+  display: inline-block;
+  margin-left: 12px;
+  background: #f5f5f5; /* cor azul do círculo */
+  color: #1f2559;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #f5f5f5; /* cor azul do círculo */
+  color: #f5f5f5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover .cta-icon {
+  transform: translateX(4px); /* leve movimento pra direita */
+}
+
+.hero-image-medic {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-img {
+  transform: translate(16%, 120px);
+  margin-top: 30px;
+  height: 640px;
+  z-index: 1;
+}
+
+.floating-image {
+  /* Imagens flutuantes */
+  position: absolute;
+  width: 260px; /* ajuste conforme necessário */
+  animation: float 3s ease-in-out infinite alternate;
+  z-index: 2; /* Fica sobre posta à .hero-img */
+}
+
+.floating-image1 {
+  top: 29%;
+  left: -7%;
+}
+
+.floating-image2 {
+  bottom: 15%;
+  right: -6%;
+}
+
+@keyframes float {
+  /* Animação de flutuação suave */
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px); /* ajuste aqui para aumentar ou diminuir a flutuação */
+  }
+}
+
+/* A única solução financeira criada por médicos - para médicos */
+.hero {
+  padding: 50px 20px;
+  background-color: #f5f5f5;
+  min-height: 550px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hero-image {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  max-width: 500px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.tag {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: white;
+  border-radius: 40px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tag .icon {
+  margin-right: 10px;
+  color: #00c853;
+  font-size: 18px;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.hero-content h1 {
+  line-height: 1.2;
+  font-size: 40px;
+  color: #1d1d1d;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.hero-content p {
+  font-size: 16px;
+  color: #1d1d1d;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.cta {
+  background: #2f8c5c;
+  color: #1d1d1d;
+  padding: 15px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.cta:hover {
+  background: #1a7583;
+}
+
+/*  Descubra porque +7.000 médicos em  */
+
+.Sec-Cards001 {
+  background-color: #f5f5f5;
+  padding: 30px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.background-container001 {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+  background: url(./imagens/SmartPhone-PayVitae.png) no-repeat center/contain;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card001 {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  max-width: 260px;
+  text-align: left;
+  position: absolute;
+}
+
+.card.left001 {
+  width: 100px;
+  left: 0;
+  transform: translate(-50%, 0);
+  margin-left: -440px;
+  padding: 2%;
+  margin-top: 220px;
+
+  /* Animação flutuante */
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Keyframes da animação */
+@keyframes float {
+  0%,
+  100% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, -10px);
+  }
+}
+
+.card.right001 {
+  margin-left: 220px;
+  right: 0;
+  transform: translate(50%, 0);
+  right: 230px;
+  margin-top: -230px;
+  padding: 2%;
+
+  /* Animação flutuante */
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Keyframes da animação */
+@keyframes float {
+  0%,
+  100% {
+    transform: translate(50%, 0);
+  }
+  50% {
+    transform: translate(50%, -10px);
+  }
+}
+
+.background-container001 h3 {
+  color: #2f8c5c;
+}
+
+.background-container001 p {
+  color: #050505;
+}
+
+.card001 h3 {
+  color: #2f8c5c;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+}
+
+.card001 p {
+  font-size: 0.9rem;
+  color: #2f8c5c;
+  margin: 0;
+}
+
+.cta-button001 {
+  display: inline-block;
+  margin: 2rem auto;
+  background: #1f2559;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .background-container001 {
+    flex-direction: column;
+    height: auto;
+    background-size: 300px;
+    background-position: center center;
+    padding: 4rem 0;
+  }
+
+  .card001 {
+    position: static;
+    transform: none;
+    margin: 1rem auto;
+  }
+}
+
+/* Motivos para utilizar o app da Caveo */
+.reasons-section {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.reasons-title {
+  font-size: 48px;
+  color: #111;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+.reasons-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.reason-card {
+  flex: 1 1 200px;
+  max-width: 280px;
+  text-align: left;
+}
+
+.reason-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.reason-heading {
+  font-size: 22px;
+  color: #000;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.reason-text {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Tudo o que você precisa para dominar sua vida financeira em um só lugar */
+.features-section {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #ebeaea;
+}
+
+.features-subtitle {
+  color: #1f2559;
+  font-size: 0.9rem;
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+.features-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 50px;
+}
+
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.feature-card {
+  max-width: 220px;
+  text-align: center;
+}
+
+.feature-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.feature-heading {
+  font-size: 1rem;
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.feature-text {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+.features-button {
+  display: inline-block;
+  margin-top: 40px;
+  background-color: #1f2559;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.features-button:hover {
+  background-color: #0050cc;
+}
+
+@media (max-width: 768px) {
+  .features-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+/*  Simplifique sua gestão PJ agora!  */
+
+/* SECTION 1 */
+.jornada-section {
+  background: linear-gradient(140deg, var(--blue-light) 0%, var(--blue) 100%);
+  padding: 120px 0 160px;
+  position: relative;
+  overflow: hidden;
+}
+.card-wrapper {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 25px;
+  padding: 40px 36px;
+  flex: 1 1 300px;
+  backdrop-filter: blur(4px);
+  color: var(--white);
+}
+.card-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.card ul {
+  display: grid;
+  gap: 14px;
+  font-size: 16px;
+}
+.card ul li {
+  display: flex;
+  gap: 8px;
+}
+.card ul li::before {
+  content: '✔';
+  color: var(--green);
+}
+
+/* SECTION 2 */
+.compare-section {
+  padding: 120px 0;
+}
+.compare-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+.compare-header {
+  border-radius: 8px 8px 0 0;
+  padding: 16px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--white);
+}
+.compare-header--caveo {
+  background: var(--blue);
+}
+.compare-header--trad {
+  background: #df4436;
+}
+.compare-list {
+  list-style: none;
+  border: 1px solid currentColor;
+  border-top: none;
+  padding: 0;
+}
+.compare-list li {
+  padding: 18px 20px;
+  border-top: 1px solid currentColor;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.compare-list--caveo {
+  color: var(--blue);
+}
+.compare-list--trad {
+  color: #df4436;
+}
+.compare-list li:first-child {
+  border-top: none;
+}
+.check,
+.cross {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  border: 2px solid currentColor;
+  position: relative;
+}
+.check::after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 0px;
+  width: 5px;
+  height: 10px;
+  border: solid currentColor;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.cross::after,
+.cross::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 8px;
+  width: 2px;
+  height: 12px;
+  background: currentColor;
+}
+.cross::before {
+  transform: rotate(45deg);
+}
+.cross::after {
+  transform: rotate(-45deg);
+}
+
+/* SECTION 3 */
+.vantagens-section {
+  padding: 120px 0 160px;
+  background: var(--gray);
+}
+.vantagens-grid {
+  display: grid;
+  gap: 40px 24px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.vant-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 30px 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.vant-icon {
+  font-size: 38px;
+  margin-bottom: 16px;
+}
+.vant-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.vant-card p {
+  font-size: 15px;
+}
+
+/* SECTION 4 */
+.comunidade-section {
+  background: var(--green);
+  padding: 120px 0;
+  color: var(--blue);
+}
+.comunidade-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 60px;
+  align-items: center;
+}
+.com-text .tag {
+  color: var(--blue);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.com-text .sub {
+  margin-bottom: 26px;
+  font-size: 16px;
+}
+.bullet-list {
+  list-style: none;
+  display: grid;
+  gap: 16px;
+  margin-bottom: 36px;
+  font-size: 15px;
+}
+.bullet-list li {
+  display: flex;
+  gap: 10px;
+}
+.bullet-list li::before {
+  content: '✔';
+  color: var(--blue);
+  font-weight: 700;
+}
+.com-img img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* responsive */
+@media (max-width: 700px) {
+  .card-wrapper {
+    flex-direction: column;
+  }
+  .compare-grid {
+    gap: 24px;
+  }
+  .vantagens-section {
+    padding: 80px 0;
+  }
+  .jornada-section {
+    padding: 80px 0 120px;
+  }
+  .compare-section,
+  .comunidade-section {
+    padding: 80px 0;
+  }
+}
+
+/*  Cada detalhe pensado para deixar sua rotina mais leve. */
+.nf-carousel-section-wrapper {
+  background: #f4f4f4;
+  padding: 50px 20px;
+  background: #f5f5f5;
+}
+
+.nf-carousel-title {
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+.nf-carousel-title h1 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #2e2e2e;
+}
+
+.nf-highlight-blue {
+  font-weight: 900;
+  color: #2f8c5c;
+}
+
+.nf-carousel-title p {
+  color: #6b7280;
+  font-size: 15px;
+}
+
+.nf-carousel-slider {
+  position: relative;
+  overflow: hidden;
+  max-width: 1300px;
+  margin: auto;
+  background: white;
+  border-radius: 12px;
+}
+
+.nf-carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.nf-carousel-slide {
+  display: flex;
+  flex-shrink: 0;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.nf-slide-left {
+  padding: 30px;
+  flex: 1;
+  min-width: 300px;
+}
+
+.nf-slide-left h2 {
+  font-size: 1.8rem;
+  color: #334155;
+  margin-top: 45px;
+  margin-bottom: 15px;
+}
+
+.nf-slide-left p {
+  font-size: 1rem;
+  color: #475569;
+  margin-bottom: 60px;
+}
+
+.nf-slide-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 165px;
+}
+
+.nf-buttons-group {
+  display: flex;
+  gap: 12px;
+}
+
+.nf-buttons-group button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: #f1f1f1;
+  color: #1e293b;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.nf-buttons-group button:hover {
+  background: #e2e8f0;
+}
+
+.nf-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.nf-dots span {
+  height: 8px;
+  border-radius: 999px;
+  background: #d1d5db;
+  transition: all 0.3s ease;
+}
+
+.nf-dots span.active {
+  background: #00cfff;
+  width: 16px;
+}
+
+.nf-dots span:not(.active) {
+  width: 8px;
+}
+
+.nf-slide-right {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nf-slide-right img {
+  width: 100%;
+  height: 420px;
+}
+
+.nf-overlay {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background: #ebebeb21;
+  backdrop-filter: blur(4px);
+  color: white;
+  padding: 7px 15px 7px 7px;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+}
+
+.nf-overlay span img {
+  width: 45px;
+  height: 45px;
+  display: block;
+}
+
+/* PayVitae acompanha sua jornada médica desde o início */
+.sec-jornada-xy9 {
+  background: #2f8c5c;
+  color: white;
+  padding: 80px 20px;
+}
+
+.sec-jornada-xy9-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+.sec-denter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.sec-jornada-xy9-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.sec-jornada-xy9-card {
+  border: 2px solid #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 360px;
+  background: #2b9e63af;
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 360px;
+  flex: 1 1 280px;
+  text-align: left;
+}
+
+.fade-in-xy9 {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-xy9.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sec-jornada-xy9-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 16px;
+}
+
+.sec-tittle-xy9 {
+  display: flex;
+  width: 1030px;
+}
+
+.sec-tittle-xy9 h2 {
+  font-size: 48px;
+}
+
+.sec-jornada-xy9-icon img {
+  height: 50px;
+}
+
+.sec-jornada-xy9-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 12px 12px;
+}
+
+.sec-jornada-xy9-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sec-jornada-xy9-card li {
+  width: 210px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #bfeeff;
+}
+
+.sec-jornada-xy9-btn {
+  background: #f5f5f5;
+  color: #2b9e63af;
+  padding: 14px 32px;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 1s ease;
+}
+
+.sec-jornada-xy9-btn:hover {
+  background: #f5f5f52f;
+  color: #f5f5f5;
+  transition: background 1s ease;
+}
+
+.jornada-xy9-card {
+  display: flex;
+  align-items: center;
+}
+
+/*Entenda porque somos diferentes*/
+.sec-comparativo-caveo {
+  background: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.comparativo-subtitle {
+  color: #2f8c5c;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.comparativo-title {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+
+.comparativo-container {
+  max-width: 960px;
+  margin: auto;
+}
+
+.comparativo-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.col {
+  flex: 1;
+  padding: 20px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.comparativo-container img {
+  height: 50px;
+}
+
+.col-caveo {
+  background: #2f8c5c;
+  color: white;
+  margin-right: 10px;
+}
+
+.col-tradicional {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #d63927;
+  color: white;
+  margin-left: 10px;
+}
+
+.comparativo-linha {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.item {
+  flex: 1;
+  padding: 16px 20px;
+  border: 1.5px solid;
+  border-radius: 12px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.positivo {
+  border-color: #2f8c5c;
+  color: #2f8c5c;
+  margin-right: 10px;
+}
+
+.negativo {
+  border-color: #d63927;
+  color: #d63927;
+  margin-left: 10px;
+}
+
+.comparativo-btn {
+  display: inline-block;
+  margin-top: 40px;
+  background: #2f8c5c;
+  color: white;
+  padding: 14px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.comparativo-btn:hover {
+  color: #2f8c5c;
+  background: #caf5c65b;
+}
+
+/* 6 vantagens exclusivas</span> que vão fazer você trocar de contabilidade agora mesmo */
+.caveo-vantagens-section {
+  padding: 80px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.caveo-vantagens-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.caveo-vantagens-container h2 {
+  text-align: center;
+  font-size: 48px;
+  line-height: 1.3;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+.caveo-highlight {
+  color: #2f8c5c;
+}
+
+/*.caveo-vantagens-gr {
+}*/
+
+.caveo-vantagens-gr1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.caveo-vantagens-gr2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.caveo-vantagem-item {
+  padding: 18px 35px;
+  border-radius: 26px;
+  border: 4px solid #1e5b1c;
+  background-color: #2f8c5c;
+  max-width: 375px;
+  height: 310px;
+  margin-bottom: 30px;
+}
+
+.caveo-vantagem-item img {
+  height: 45px;
+  margin-left: 20px;
+}
+
+.caveo-vantagem-item h3 {
+  color: #f5f5f5;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.caveo-vantagem-item p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f5f5f5;
+}
+
+/* Acesso à comunidade médica mais valiosa do Brasil */
+.caveo-comunidade-section {
+  position: relative; /* ESSENCIAL para posicionar elementos absolutos dentro */
+  overflow: hidden; /* evita overflow durante o scroll animado */
+  background-color: #2f8c5c;
+  padding: 80px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.caveo-comunidade-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.caveo-comunidade-texto {
+  flex: 1 1 500px;
+  max-width: 600px;
+}
+
+.caveo-comunidade-label {
+  color: #f5f5f5;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.caveo-comunidade-texto h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  line-height: 1.3;
+  color: #f5f5f5;
+}
+
+.caveo-comunidade-sub {
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: #f5f5f5;
+}
+
+.caveo-comunidade-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+.caveo-comunidade-lista li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.caveo-comunidade-lista li img {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.caveo-comunidade-lista p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #f5f5f5;
+}
+
+.caveo-comunidade-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  color: #2f8c5c;
+  background: #f5f5f5;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.caveo-comunidade-btn:hover {
+  color: #f5f5f5;
+  background: #caf5c65b;
+}
+
+.caveo-comunidade-imagem {
+  flex: 1 1 500px;
+  text-align: center;
+}
+
+.caveo-comunidade-imagem img {
+  border-radius: 15px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Perguntas Frequentes */
+.caveo-faq-section {
+  padding: 80px 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.caveo-faq-label {
+  color: #2f8c5c;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.caveo-faq-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.caveo-faq-grid-columns {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.caveo-faq-col {
+  flex: 1 1 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.caveo-faq-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.caveo-faq-toggle {
+  all: unset;
+  background-color: white;
+  border: 3px solid #2f8c5c;
+  border-radius: 24px;
+  padding: 16px 24px;
+  font-weight: 500;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* centraliza verticalmente */
+  cursor: pointer;
+  transition: border-color 0.2s;
+  min-height: 56px;
+}
+
+.caveo-faq-wrapper.active .caveo-faq-toggle {
+  border-color: #2983206b;
+}
+
+.caveo-faq-icon {
+  font-size: 33px;
+  font-weight: bold;
+  color: #2f8c5c;
+  margin-left: 16px;
+}
+
+/* RESPOSTA COM ANIMAÇÃO SUAVE */
+.caveo-faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  font-size: 15px;
+  padding: 0 4px;
+  line-height: 1.5;
+  color: #000;
+}
+
+.caveo-faq-wrapper.active .caveo-faq-answer {
+  padding-top: 12px;
+  opacity: 1;
+  max-height: 200px;
+}
+
+.cta-final {
+  margin-top: 100px;
+  padding: 0 20px;
+}
+
+.cta-conteudo {
+  position: relative;
+  background-image: url('/imagens/fundo-footer-green0.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 40px;
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: visible;
+}
+
+.cta-textos {
+  color: #f5f5f5;
+  max-width: 600px;
+  z-index: 2;
+}
+
+.cta-textos h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.cta-textos p {
+  font-size: 16px;
+  margin-bottom: 26px;
+  line-height: 1.6;
+}
+
+.cta-botao {
+  color: #2f8c5c;
+  background: #f5f5f5;
+  padding: 12px 24px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.cta-botao:hover {
+  color: #f5f5f5;
+  background: #1e6942;
+}
+
+.cta-medico {
+  position: absolute;
+  right: 0px;
+  bottom: -10px;
+  height: 150%;
+  z-index: 3;
+  pointer-events: none;
+  margin-bottom: 11px;
+}
+
+/* Footer final seção */
+.caveo-footer-final {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #2f8c5c;
+}
+.caveo-footer-final p {
+  margin-right: 15px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.caveo-footer-PoliTermo {
+  display: flex;
+  flex-direction: row;
+}
+
+.caveo-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.caveo-200 img {
+  height: 35px;
+  margin-right: 100px;
+}
+
+.X00F4G {
+  height: 30px;
+}
+
+.caveo-X00F4G {
+  margin-left: 100px;
+}
